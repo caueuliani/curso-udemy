@@ -15,13 +15,21 @@ import UsuarioInfo from './componentes/condicional/UsuarioInfo'
 import DiretaPai from './componentes/comunicacao/DiretaPai'
 import IndiretaPai from './componentes/comunicacao/IndiretaPai'
 import Input from './componentes/formulario/Input'
+import Contador from './componentes/contador/Contador'
+import Mega from './componentes/mega/Mega'
 
 export default () => (
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
 
-            <Card titulo="#11- Input" color="#18DAD2">
+            <Card titulo="#13- Mega" color="#9109C8">
+              <Mega qtde = {8}></Mega>
+            </Card>
+            <Card titulo="#12- Contador" color="#EB524B">
+              <Contador numeroInicial ={10}></Contador>  
+            </Card>
+            <Card titulo="#11- Componente Controlado (Input)" color="#18DAD2">
               <Input></Input>  
             </Card>
             <Card titulo="#10- Comunicação Indireta" color="#7D47A7">
